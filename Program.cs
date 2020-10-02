@@ -2,13 +2,13 @@
 
 namespace MyFirstProject
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
-            string myName = "regan";
-            Console.WriteLine("Hello " + myName);
-
+            
         }
+
     }
 }
+
