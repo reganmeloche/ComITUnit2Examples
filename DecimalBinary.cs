@@ -13,7 +13,6 @@ namespace MyFirstProject
             Console.WriteLine("The result is: " + binaryString);
         }
 
-        // Function
         static string ConvertDecimalToBinary(int num) {
             string result = "";
 
