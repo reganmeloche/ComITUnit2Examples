@@ -13,6 +13,7 @@ namespace MyFirstProject
             Console.WriteLine("The result is: " + binaryString);
         }
 
+        // Function
         static string ConvertDecimalToBinary(int num) {
             string result = "";
 
@@ -26,9 +27,13 @@ namespace MyFirstProject
             }
 
             // Reverse the string
+            return ReverseString(result);
+        }
+
+        static string ReverseString(string stringToReverse) {
             string reversedResult = ""; 
-            for (int i = result.Length-1; i >= 0; i--) {
-                reversedResult += result[i];
+            for (int i = stringToReverse.Length-1; i >= 0; i--) {
+                reversedResult += stringToReverse[i];
             }
             return reversedResult;
         }
