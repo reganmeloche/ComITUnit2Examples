@@ -8,8 +8,8 @@ namespace MyFirstProject
         {
             Console.WriteLine("Please enter a base-10 number: ");
             string userInput = Console.ReadLine();
-            int decimalNumber = Convert.ToInt32(userInput);
-            string binaryString = ConvertDecimalToBinary(decimalNumber);
+            int base10Number = Convert.ToInt32(userInput);
+            string binaryString = ConvertDecimalToBinary(base10Number);
             Console.WriteLine("The result is: " + binaryString);
         }
 
