@@ -10,11 +10,11 @@ namespace MyFirstProject
             decimal ticketPrice = 0m;
 
             // If statements go here
-            if (age < 5) {
-                ticketPrice = 0m;
-            } else if (age >= 5 && age < 14) {
-                ...
-            }...
+            // if (age < 5) {
+            //     ticketPrice = 0m;
+            // } else if (age >= 5 && age < 14) {
+            //     ...
+            // }...
             
         
             Console.WriteLine("The ticket price is: " + ticketPrice);
