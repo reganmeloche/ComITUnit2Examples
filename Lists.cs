@@ -5,11 +5,21 @@ namespace MyFirstProject
 {
     public class Lists
     {
-        public static void Main()
+        public static void MainLists()
         {   
-            List<int> myList = new List<int>();
+            List<int> myList = GatherInput();
 
-            // 1. Fill the list
+            PrintList(myList);
+
+            int max = GetMaxFromList(myList);
+
+            Console.WriteLine("Max value of the list is: " + max);
+        }
+
+
+        static List<int> GatherInput() {
+            List<int> theListToReturn = new List<int>();
+
             while (true) {
                 Console.WriteLine("Enter the next number. Or enter 'quit' when you're done.");
                 string userInput = Console.ReadLine();
@@ -19,17 +29,9 @@ namespace MyFirstProject
                 }
 
                 int nextInt = Convert.ToInt32(userInput);
-                myList.Add(nextInt);
+                theListToReturn.Add(nextInt);
             }
-
-
-            // 2. Print the list
-            PrintList(myList);
-
-            // 3. Get max value from the list
-            int max = GetMaxFromList(myList);
-
-            Console.WriteLine("Max value of the list is: " + max);
+            return theListToReturn;
         }
 
         static void PrintList(List<int> listToPrint) {
@@ -49,5 +51,6 @@ namespace MyFirstProject
             }
             return max;
         }
+
     }
 }
