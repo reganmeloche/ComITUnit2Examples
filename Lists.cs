@@ -5,7 +5,7 @@ namespace MyFirstProject
 {
     public class Lists
     {
-        public static void MainLists()
+        public static void Run()
         {   
             List<int> myList = GatherInput();
 

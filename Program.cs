@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MyFirstProject
+namespace Recipes
 {
     class Program 
     {
-        static void Main(string[] args)
-        {   
-            Lists.Main();
+        public static void Main() {
+         
         }
-
     }
 }
 
