@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MyFirstProject
 {
-    class Unit2Quiz2 
+    public class Unit2Quiz2 
     {
 
         public static void Q2() {
@@ -29,6 +29,19 @@ namespace MyFirstProject
             var e = new List<int>() { 7, 12, -33 };
             FuncE(e);
             
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            PrintList(c);
+            PrintList(d);
+            PrintList(e);
+            
+        }
+
+        static void PrintList(List<int> myList) {
+            for (int i = 0; i < myList.Count; i++) {
+                Console.Write($"{myList[i]} ");
+            }
+            Console.WriteLine();
         }
 
         static void FuncA(int x) {
@@ -52,59 +65,6 @@ namespace MyFirstProject
                 temp.Add(x[i]);
             }
             temp.Add(4);
-        }
-
-
-
-        // public static void Main()
-        // {   
-        //     var ingredients = new List<string>() { "garlic", "onions" };
-        //     ingredients.Add("noodles");
-        //     AddTheSauce(ingredients);
-        //     ingredients.Add("cilantro");
-
-        //     Console.WriteLine("Add the secret ingredient:");
-        //     string secretIngredient = Console.ReadLine();
-        //     ingredients.Add(secretIngredient);
-
-        //     Console.WriteLine("This recipe has " + ingredients.Count + " ingredients.");
-        // }
-
-        // static void AddTheSauce(List<string> theList) {
-        //     theList.Add("fish sauce");
-        //     theList.Add("peanut butter");
-        //     theList.Add("rice vinegar");
-        // }
-
-
-                    // // 1 1 2 3 5 8 13 21
-            // // 0 1 2 3 4 5 6  7
-            // Console.WriteLine("Which fibonacci value would you like to find?");
-            // string userInput = Console.ReadLine();
-            // int n = Convert.ToInt32(userInput);
-
-            // var fib = new List<int>();
-            // fib.Add(1);
-            // fib.Add(1);
-
-            // for (int i = 2; i <= n; i++) {
-            //     int next = fib[i-1] + fib[i-2];
-            //     fib.Add(next);
-            // }
-
-            // Console.WriteLine(fib[n]);
-
-        static string DoIt(int n, bool b) {
-            string s = "";
-            for (int i = 0; i < n; i++) {
-                if (b) {
-                    s += ".";
-                } else {
-                    s += "-";
-                }
-            }
-
-            return s;
         }
     }
 }
