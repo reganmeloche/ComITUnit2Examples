@@ -6,12 +6,38 @@ namespace MyFirstProject
     public class Unit2Quiz2 
     {
 
-        public static void Q2() {
-        
+        /*
+        Write a function that takes in two numbers, and returns the sum of all of the numbers between and including those two numbers. 
+        Example: I enter 7 and 12 - the result should be 57 (7+8+9+10+11+12 = 57)
+        */
+        public static int Q2(int a, int b) {
+            int min = Math.Min(a,b);
+            int max = Math.Max(a,b);
+
+            int sum = 0;
+            for (int i = min; i <= max; i++) {
+                sum += i;
+            }
+            return sum;
         }
-        public static void Q3() {
-        
+
+        public static string Q3(string input) {
+            string newString = "";
+
+            List<string> vowels = new List<string>() {"a", "e", "i", "o", "u"};
+
+            for (int i = 0; i < input.Length; i++) {
+                string nextChar = input[i].ToString();
+                string nextCharLower = nextChar.ToLower();
+
+                if (!vowels.Contains(nextCharLower)){
+                    newString += nextChar;
+                }
+            }
+
+            return newString;
         }
+
         public static void Q5() {
             int a = 1;
             FuncA(a);
@@ -34,7 +60,6 @@ namespace MyFirstProject
             PrintList(c);
             PrintList(d);
             PrintList(e);
-            
         }
 
         static void PrintList(List<int> myList) {
